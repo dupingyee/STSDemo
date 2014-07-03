@@ -8,9 +8,9 @@
 		<result property="name" column="name" javaType="String" />		
 	</resultMap>	
 	<select id="queryById" parameterType="Integer" resultMap="Game-Result">
-		select * from yanhuiqiang_game_tb where code=#{id}  
+		select * from duping_game_tb where code=#{id}  
     </select>
 	<select id="queryList" resultMap="Game-Result">
-		select * from yanhuiqiang_game_tb
+		select * from duping_game_tb
     </select>    
 </mapper> 

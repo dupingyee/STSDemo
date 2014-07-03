@@ -9,10 +9,10 @@
 		<result property="name" column="name" javaType="String" />		
 	</resultMap>	
 	<select id="queryById" parameterType="Integer" resultMap="Server-Result">
-		select * from yanhuiqiang_game_server_tb where code=#{id}  
+		select * from duping_game_server_tb where code=#{id}  
     </select>
 	<select id="queryListByGameId" parameterType="Integer" resultMap="Server-Result">
-		select * from yanhuiqiang_game_server_tb
+		select * from duping_game_server_tb
 		where game_id=#{game_id}
     </select>    
 </mapper> 
